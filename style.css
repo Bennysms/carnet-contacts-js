@@ -1,0 +1,206 @@
+/* importation de google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* variables */
+:root{
+    --primary-color:#009BFF;
+    --red-color: #FF0000;
+    --other-color:#979797;
+    --black-color : #000;
+    --border-color: #D8D8D8;
+    --text-color:#747474;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* message  */
+.message{
+    font-size: 25px;
+    color: var(--text-color);
+    margin-top: 20px;
+    padding-left: 30px;
+    display: none;
+    transition: all .5s ease;
+}
+/* main style */
+main{
+    display: flex;
+    padding: 30px;
+    border: solid 1px var(--border-color);
+    border-radius: 15px;
+}
+/* left style */
+
+.left, .right{
+    width: 550px;
+
+}
+
+.header_contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+.btn{
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    outline: none;
+    padding: 8px 36px;
+    border-radius: 10px;
+}
+
+/* style contax-box */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+    height: 450px;
+    padding: 0 30px;
+}
+.contact-container.border{
+    border-right: 1px solid var(--border-color);
+}
+.contact-container.trans{
+    border-right: none;
+}
+.contac-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+.img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.contact-details{
+    display: flex;
+}
+.contact-text .name{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.contact-text h3{
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+.icons i{
+    font-size: 18px;
+    padding: 6px 9px;
+    margin: 0 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.icons i:hover{
+    transform: translateY(5px);
+}
+.icons i:nth-child(1){
+    border: 1px solid var(--other-color);
+    color: var(--other-color);
+}
+.icons i:nth-child(2){
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+/* Partie du formulaire */
+
+.right h2{
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-left: 30px;
+    opacity: 0;
+    transition: all .6s ease;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0 20px 30px;
+    transition: All .8s ease;
+    opacity: 0.2;
+}
+.form-text{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.form-text input, .form-text select{
+    outline: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: Solid 1px var(--border-color);
+}
+.btn-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-group input{
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    outline: none;
+    padding: 8px 36px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}
+.btn-group input[type="text"]{
+    padding: 8px 10px;
+    background-color: var(--border-color);
+}
+input[type="file"]{
+    display: none;
+}
+#file{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+#file i{
+    font-size: 30px;
+    margin-right: 10px;
+}
