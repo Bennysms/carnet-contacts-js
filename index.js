@@ -22,11 +22,6 @@ let profil = document.getElementById("profil");
 
 // recuperer les données tapées dans le formulaire
 
-
-
-
-
-
 // message : la liste est vide
 let message = document.querySelector(".message");
 
@@ -114,7 +109,10 @@ ajoutBtn.addEventListener("click", (e) =>{
         <input type="text" value="Annuler" id="reset">
     </div>
     `
-})
+});
+
+
+
 
 // fonction qui lance les programme au lancement
 function loaders(){

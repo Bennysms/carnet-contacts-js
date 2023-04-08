@@ -26,15 +26,71 @@
 
        </section>
        <section class="right">
-            <h2>Ajouter un contact</h2>
-            <form>
-               
+            <h2 id="formH2">Ajouter un contact</h2>
+            <form id="formulaire">
+                <div class="form-text">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" required>
+                    </div>
+                <div class="form-text">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" required>
+                </div>
+                <div class="form-text">
+                    <label for="pays">Pays</label>
+                    <select  id="pays" required>
+                        <option value="">Choisir un pays</option>
+                        <option value="Rdc">RDC</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Russie">Russie</option>
+                        <option value="Côte d'ivoire">Côte d'ivoire</option>
+                        <option value="Benin">Bénin</option>
+                        <option value="Bresil">Brésil</option>
+                        <option value="Tanzanie">Tanzanie</option>
+                    </select>
+                </div>
+                <div class="form-text">
+                    <label for="genre">Genre</label>
+                    <select  id="genre" required>
+                        <option value="">Choisir un genre</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                </div>
+                <div class="form-text">
+                    <label for="emal">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-text">
+                    <label for="phone">Téléphone</label>
+                    <input type="text" id="phone" required>
+                </div>
+                <div class="form-text">
+                    <label for="date">Date de Naissance</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-text">
+                    <label for="profil" id="file">
+                        <i class='bx bx-image-add'></i>
+                        Profil</label>
+                    <input type="file" id="profil" accept="image/*" required>
+                </div>
+            
+                <div class="btn-group">
+                    <input type="submit" value="Ajouter un contact" id="submit">
+                    <input type="text" value="Annuler" id="reset">
+                </div>
             </form>
        </section>
     </main>
 
 
     <!-- js link -->
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+
+    <!-- link jquery -->
+    <script src="jquery/jquery.js"></script>
+    <script src="jqscript.js"></script>
 </body>
 </html>
