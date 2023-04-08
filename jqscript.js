@@ -5,8 +5,8 @@ $(document).ready(function(){
     let formH2 = $("#formH2");
 
     // cacher le formulaire au chargement de la page
-    // form.hide();
-    // formH2.hide();
+    form.hide();
+    formH2.hide();
 
     // Variable btn ajouter pour ajouter un contact
     let btnAjout = $("#ajoutBtn");
